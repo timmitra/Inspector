@@ -26,6 +26,7 @@ struct ItemDetailsView: View {
           Form {
             LabeledContent("size", value: item.count.formatted())
           }
+          .inspectorColumnWidth(min: 100, ideal: 150, max: 200)
           .navigationTitle("Inspector")
         }
     }
