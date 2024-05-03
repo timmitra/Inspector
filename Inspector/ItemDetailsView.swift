@@ -27,6 +27,8 @@ struct ItemDetailsView: View {
             LabeledContent("size", value: item.count.formatted())
           }
           .inspectorColumnWidth(min: 100, ideal: 150, max: 200)
+          .presentationDetents([.medium, .large])
+          .presentationBackgroundInteraction(.enabled)
           .navigationTitle("Inspector")
         }
     }
